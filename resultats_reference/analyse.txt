@@ -1,0 +1,659 @@
+graines 5 experiences 34
+
+DETECTION (toutes methodes)
+                            method    moy    bas   haut   n  auprc  auprc_bas  auprc_haut     f1    far    mar
+0                         E+U_fus  0.876  0.833  0.913  34  0.831      0.771       0.885  0.572  0.077  0.554
+1                         U_early  0.872  0.830  0.909  34  0.827      0.760       0.885  0.598  0.082  0.522
+2                        U_single  0.869  0.823  0.910  34  0.823      0.754       0.884  0.622  0.087  0.491
+3                          KMeans  0.869  0.823  0.908  34  0.829      0.767       0.884  0.536  0.091  0.585
+4                           U_loc  0.868  0.822  0.909  34  0.821      0.752       0.882  0.636  0.097  0.468
+5                         IForest  0.867  0.829  0.902  34  0.817      0.753       0.874  0.411  0.064  0.717
+6                           E_fus  0.867  0.820  0.907  34  0.820      0.763       0.873  0.513  0.075  0.617
+7                             RAW  0.866  0.814  0.911  34  0.830      0.760       0.891  0.626  0.096  0.480
+8                           U_fus  0.865  0.819  0.904  34  0.822      0.759       0.878  0.586  0.079  0.538
+9                     U_early:max  0.862  0.815  0.902  34  0.813      0.742       0.873  0.593  0.084  0.527
+10                      E_fus:max  0.860  0.819  0.896  34  0.798      0.746       0.845  0.505  0.074  0.626
+11                        NLL_fus  0.860  0.815  0.899  34  0.797      0.743       0.845  0.479  0.065  0.655
+12  capteur_U:Volume Flow RateRMS  0.860  0.805  0.907  34  0.836      0.772       0.893  0.579  0.048  0.564
+13               modalite_U:debit  0.858  0.801  0.907  34  0.835      0.772       0.894  0.577  0.048  0.565
+14                      U_fus:max  0.854  0.803  0.899  34  0.809      0.739       0.871  0.600  0.077  0.523
+15                       U_branch  0.852  0.797  0.898  34  0.811      0.743       0.871  0.569  0.070  0.562
+16                   U_single:max  0.847  0.789  0.897  34  0.809      0.734       0.874  0.638  0.093  0.468
+17                      U_loc:max  0.847  0.790  0.897  34  0.807      0.733       0.872  0.637  0.098  0.465
+18                    NLL_fus:max  0.844  0.804  0.880  34  0.761      0.712       0.807  0.423  0.061  0.708
+19                        RAW:max  0.839  0.772  0.896  34  0.805      0.726       0.874  0.626  0.097  0.480
+20                   U_branch:max  0.838  0.775  0.891  34  0.794      0.719       0.861  0.588  0.071  0.540
+21                        E_early  0.834  0.776  0.884  34  0.772      0.705       0.834  0.484  0.057  0.654
+22                    E_early:max  0.818  0.764  0.868  34  0.748      0.686       0.806  0.455  0.060  0.679
+23                      E_loc:max  0.760  0.691  0.823  34  0.684      0.616       0.748  0.407  0.055  0.724
+24  capteur_E:Volume Flow RateRMS  0.755  0.697  0.810  34  0.694      0.634       0.752  0.348  0.055  0.772
+25               modalite_E:debit  0.754  0.696  0.809  34  0.695      0.637       0.753  0.343  0.052  0.777
+26                   E_single:max  0.749  0.678  0.815  34  0.683      0.613       0.746  0.385  0.050  0.744
+27                          E_loc  0.732  0.660  0.799  34  0.654      0.588       0.718  0.364  0.046  0.763
+28                       E_single  0.721  0.648  0.791  34  0.652      0.586       0.716  0.350  0.045  0.774
+29                            PCA  0.631  0.553  0.710  34  0.583      0.519       0.646  0.330  0.041  0.790
+30         modalite_U:temperature  0.631  0.556  0.703  34  0.538      0.470       0.607  0.290  0.090  0.808
+31         capteur_U:Thermocouple  0.616  0.569  0.665  34  0.494      0.447       0.546  0.249  0.070  0.843
+32           modalite_U:vibration  0.602  0.522  0.687  34  0.547      0.466       0.637  0.222  0.029  0.870
+33          capteur_U:Temperature  0.591  0.522  0.661  34  0.509      0.450       0.575  0.176  0.078  0.892
+34    capteur_U:Accelerometer1RMS  0.588  0.516  0.665  34  0.528      0.454       0.606  0.215  0.025  0.875
+35    capteur_U:Accelerometer2RMS  0.582  0.501  0.668  34  0.541      0.462       0.628  0.285  0.041  0.824
+36         modalite_E:temperature  0.572  0.525  0.621  34  0.491      0.443       0.544  0.137  0.036  0.923
+37          capteur_E:Temperature  0.543  0.504  0.584  34  0.471      0.431       0.512  0.066  0.018  0.965
+38         capteur_E:Thermocouple  0.533  0.483  0.586  34  0.459      0.414       0.509  0.079  0.012  0.958
+39           modalite_E:vibration  0.518  0.436  0.602  34  0.487      0.423       0.555  0.232  0.036  0.862
+40             capteur_U:Pressure  0.502  0.479  0.525  34  0.422      0.400       0.445  0.026  0.010  0.986
+41            modalite_U:pression  0.499  0.476  0.521  34  0.422      0.400       0.443  0.025  0.010  0.987
+42    capteur_E:Accelerometer1RMS  0.498  0.420  0.579  34  0.473      0.409       0.539  0.239  0.032  0.858
+43          modalite_U:electrique  0.494  0.474  0.514  34  0.420      0.400       0.439  0.030  0.015  0.984
+44              capteur_U:Voltage  0.492  0.465  0.518  34  0.417      0.392       0.443  0.022  0.010  0.989
+45              capteur_U:Current  0.492  0.463  0.520  34  0.420      0.395       0.445  0.022  0.009  0.989
+46              capteur_E:Current  0.484  0.440  0.531  34  0.431      0.397       0.468  0.005  0.003  0.997
+47            modalite_E:pression  0.482  0.438  0.528  34  0.422      0.384       0.463  0.033  0.012  0.983
+48              capteur_E:Voltage  0.482  0.434  0.530  34  0.427      0.385       0.470  0.043  0.018  0.978
+49             capteur_E:Pressure  0.481  0.437  0.527  34  0.423      0.386       0.464  0.031  0.012  0.984
+50          modalite_E:electrique  0.475  0.430  0.519  34  0.427      0.391       0.462  0.025  0.008  0.987
+51    capteur_E:Accelerometer2RMS  0.474  0.394  0.557  34  0.436      0.379       0.498  0.233  0.072  0.854
+prevalence moyenne 0.405
+
+DETECTION : differences appariees d'AUROC
+           A                 B   diff    bas   haut  p_wilcoxon   n
+0     U_loc             E_fus  0.002 -0.027  0.029       0.436  34
+1     U_loc               RAW  0.003 -0.008  0.020       0.249  34
+2     E_fus               RAW  0.001 -0.032  0.035       0.554  34
+3     U_fus             E_fus -0.002 -0.031  0.028       0.648  34
+4     U_loc             U_fus  0.004 -0.020  0.028       0.636  34
+5     E_fus            KMeans -0.002 -0.019  0.015       0.457  34
+6     U_loc            KMeans -0.000 -0.023  0.022       0.813  34
+7   U_early             U_loc  0.004 -0.011  0.022       0.826  34
+8     U_loc          U_single -0.001 -0.006  0.004       0.893  34
+9     E_fus             E_loc  0.135  0.092  0.183       0.000  34
+10    E_fus           E_early  0.033  0.015  0.053       0.001  34
+11  E+U_fus             E_fus  0.009 -0.013  0.032       0.343  34
+12  NLL_fus             E_fus -0.007 -0.014  0.000       0.087  34
+13    U_loc  modalite_U:debit  0.010 -0.050  0.074       0.853  34
+14    E_fus  modalite_E:debit  0.113  0.066  0.164       0.000  34
+15    U_loc           IForest  0.001 -0.019  0.020       0.388  34
+
+AUROC par famille
+ method      E_fus  KMeans   RAW  U_fus  U_loc  modalite_U:debit  modalite_U:electrique  modalite_U:pression  modalite_U:temperature  modalite_U:vibration
+family                                                                                                                                                   
+ajout_eau    0.91    0.83  0.86   0.83   0.85              0.84                   0.51                 0.46                    0.82                  0.96
+balourd      0.89    0.90  0.92   0.92   0.92              0.67                   0.49                 0.54                    0.58                  0.93
+cavitation   0.82    0.81  0.82   0.78   0.82              0.74                   0.52                 0.52                    0.74                  0.65
+eau_chaude   0.96    0.96  0.95   0.94   0.94              0.94                   0.40                 0.56                    0.93                  0.94
+fuite        0.75    0.76  0.81   0.73   0.84              0.77                   0.45                 0.48                    0.73                  0.44
+valve1       0.87    0.88  0.86   0.89   0.86              0.93                   0.50                 0.48                    0.59                  0.48
+valve2       0.91    0.91  0.88   0.88   0.88              0.92                   0.53                 0.53                    0.54                  0.57
+
+experiences les plus difficiles (U_loc)
+ method    E_fus  KMeans  U_fus  U_loc
+exp                                  
+valve1/6   0.48    0.61   0.78   0.55
+valve1/4   0.80    0.80   0.71   0.58
+valve1/1   0.83    0.73   0.72   0.60
+other/8    0.49    0.53   0.64   0.64
+other/2    0.67    0.57   0.45   0.68
+valve1/2   0.79    0.81   0.79   0.74
+other/13   0.76    0.71   0.66   0.74
+other/11   0.87    0.72   0.74   0.77
+
+ATTRIBUTION Top-1, pannes d'amplitude (toutes intensites)
+       method    moy    bas   haut   n
+4    NLL_fus  0.757  0.725  0.785  33
+1      E_fus  0.755  0.722  0.784  33
+5        RAW  0.720  0.674  0.762  33
+2      E_loc  0.717  0.698  0.735  33
+10  U_single  0.715  0.676  0.751  33
+3   E_single  0.704  0.685  0.722  33
+9      U_loc  0.697  0.658  0.733  33
+0    E_early  0.694  0.678  0.709  33
+6   U_branch  0.653  0.617  0.688  33
+8      U_fus  0.308  0.291  0.326  33
+7    U_early  0.272  0.264  0.280  33
+
+ATTRIBUTION Top-1, intensite 3 et 5
+       method    moy    bas   haut   n
+10  U_single  0.886  0.854  0.915  33
+5        RAW  0.878  0.837  0.913  33
+1      E_fus  0.874  0.848  0.896  33
+4    NLL_fus  0.873  0.848  0.894  33
+9      U_loc  0.870  0.836  0.900  33
+2      E_loc  0.832  0.815  0.848  33
+6   U_branch  0.831  0.794  0.865  33
+3   E_single  0.819  0.801  0.835  33
+0    E_early  0.779  0.766  0.791  33
+8      U_fus  0.357  0.334  0.379  33
+7    U_early  0.313  0.302  0.323  33
+
+Par panne
+ fault     drift  noise  offset  shuffle  stuck
+method                                        
+RAW        0.61   0.79    0.77     0.20   0.24
+E_loc      0.60   0.96    0.59     0.27   0.05
+E_fus      0.67   0.92    0.68     0.20   0.15
+U_loc      0.57   0.79    0.72     0.21   0.21
+U_fus      0.28   0.32    0.33     0.20   0.20
+U_branch   0.53   0.73    0.70     0.21   0.21
+NLL_fus    0.67   0.92    0.68     0.20   0.16
+E_early    0.57   0.97    0.55     0.28   0.08
+U_early    0.26   0.20    0.35     0.20   0.22
+E_single   0.58   0.97    0.57     0.29   0.04
+U_single   0.60   0.80    0.74     0.20   0.23
+
+Par intensite
+ sev          1     2     3     5
+method                          
+RAW       0.44  0.69  0.82  0.94
+E_loc     0.51  0.69  0.79  0.88
+E_fus     0.53  0.74  0.84  0.91
+U_loc     0.39  0.65  0.80  0.93
+U_fus     0.23  0.29  0.33  0.38
+U_branch  0.35  0.60  0.76  0.91
+NLL_fus   0.53  0.75  0.84  0.91
+E_early   0.53  0.69  0.75  0.81
+U_early   0.21  0.25  0.28  0.34
+E_single  0.50  0.68  0.77  0.87
+U_single  0.41  0.67  0.83  0.95
+
+Par modalite en panne (intensite >= 3)
+ truth     debit  electrique  pression  temperature  vibration
+method                                                       
+RAW        0.83        0.95      0.94         0.83       0.83
+E_loc      0.61        0.99      0.98         0.81       0.77
+E_fus      0.72        0.98      0.98         0.78       0.91
+U_loc      0.80        0.95      0.94         0.87       0.80
+U_fus      0.61        0.18      0.16         0.53       0.31
+U_branch   0.78        0.90      0.91         0.81       0.76
+NLL_fus    0.73        0.99      0.99         0.74       0.92
+E_early    0.60        0.99      0.99         0.66       0.66
+U_early    0.45        0.24      0.30         0.31       0.27
+E_single   0.60        0.99      0.96         0.80       0.74
+U_single   0.82        0.95      0.95         0.87       0.83
+
+Differences appariees de Top-1
+            A         B   diff    bas   haut  p_wilcoxon   n
+0      U_loc       RAW -0.023 -0.037 -0.007       0.002  33
+1      U_loc     E_loc -0.020 -0.057  0.012       0.596  33
+2      U_loc     E_fus -0.058 -0.088 -0.031       0.001  33
+3      U_loc     U_fus  0.389  0.362  0.413       0.000  33
+4   U_branch     U_loc -0.043 -0.054 -0.031       0.000  33
+5   U_branch     U_fus  0.345  0.321  0.367       0.000  33
+6      U_loc  U_single -0.018 -0.025 -0.012       0.000  33
+7      E_fus       RAW  0.035  0.006  0.067       0.083  33
+8      E_fus   E_early  0.061  0.037  0.081       0.000  33
+9      E_fus     E_loc  0.038  0.014  0.058       0.001  33
+10   NLL_fus     E_fus  0.002 -0.003  0.007       0.427  33
+11     U_fus   U_early  0.036  0.023  0.049       0.000  33
+offset 
+        A      B   diff    bas   haut  p_wilcoxon   n
+0  U_loc    RAW -0.041 -0.056 -0.025        0.00  33
+1  U_loc  E_fus  0.043  0.011  0.071        0.01  33
+2  E_fus    RAW -0.084 -0.116 -0.049        0.00  33
+drift 
+        A      B   diff    bas   haut  p_wilcoxon   n
+0  U_loc    RAW -0.032 -0.048 -0.016       0.001  33
+1  U_loc  E_fus -0.094 -0.125 -0.065       0.000  33
+2  E_fus    RAW  0.062  0.031  0.095       0.001  33
+noise 
+        A      B   diff    bas   haut  p_wilcoxon   n
+0  U_loc    RAW  0.005 -0.010  0.023       0.775  33
+1  U_loc  E_fus -0.124 -0.155 -0.096       0.000  33
+2  E_fus    RAW  0.128  0.102  0.157       0.000  33
+
+Un capteur contre modalite entiere (intensite 3, modalites a 2 capteurs)
+ portee    modalite_entiere  un_capteur
+method                                
+RAW                   0.82        0.71
+E_loc                 0.80        0.67
+E_fus                 0.85        0.76
+U_loc                 0.81        0.68
+U_fus                 0.32        0.28
+U_branch              0.75         NaN
+NLL_fus               0.84        0.76
+E_early               0.72        0.64
+U_early               0.25        0.22
+E_single              0.79        0.65
+U_single              0.83        0.69
+
+Deux modalites en panne (part retrouvee dans le Top-2 ; hasard = 0,40)
+       method    moy    bas   haut   n
+10  U_single  0.926  0.903  0.945  33
+5        RAW  0.925  0.898  0.950  33
+9      U_loc  0.921  0.898  0.941  33
+4    NLL_fus  0.892  0.879  0.903  33
+1      E_fus  0.891  0.877  0.903  33
+6   U_branch  0.889  0.863  0.912  33
+2      E_loc  0.858  0.850  0.866  33
+3   E_single  0.853  0.845  0.862  33
+0    E_early  0.846  0.839  0.852  33
+8      U_fus  0.484  0.471  0.495  33
+7    U_early  0.452  0.448  0.455  33
+
+RAW (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration         11.0        -0.2          2.5      -0.3    1.3
+electrique         0.7        35.3          2.5      -0.3    1.3
+temperature        0.7        -0.2          6.4      -0.3    1.3
+pression           0.7        -0.2          2.5      30.4    1.3
+debit              0.7        -0.2          2.5      -0.3    9.7
+
+E_loc (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration          1.0        -0.3         -0.1      -0.2    0.1
+electrique         0.1        24.4         -0.1      -0.2    0.1
+temperature        0.1        -0.3          1.3      -0.2    0.1
+pression           0.1        -0.3         -0.1      11.5    0.1
+debit              0.1        -0.3         -0.1      -0.2    0.2
+
+U_loc (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration          8.7         0.3          2.7      -0.1    0.6
+electrique         0.6        34.9          2.7      -0.1    0.6
+temperature        0.6         0.3          6.6      -0.1    0.6
+pression           0.6         0.3          2.6      31.9    0.6
+debit              0.6         0.3          2.6      -0.1    6.0
+
+U_branch (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration          8.7         0.9          1.9       0.7    1.2
+electrique         0.6        19.2          1.7       0.4    1.0
+temperature        0.6         0.4          4.6       0.3    0.9
+pression           0.6         0.7          1.9      21.8    1.0
+debit              0.6         0.5          1.9       0.3    6.5
+
+E_fus (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration         10.8         0.0          1.8      -0.1    1.0
+electrique         1.1        37.3          1.4      -0.2    0.8
+temperature        1.2        -0.1          2.8      -0.1    0.9
+pression           1.2        -0.1          1.5      30.3    0.7
+debit              1.2        -0.0          1.2      -0.1    1.8
+
+U_fus (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration          3.4         4.7          2.4       4.4    2.4
+electrique         1.0         2.5          2.1       2.6    1.8
+temperature        0.7         2.5          2.3       2.4    1.1
+pression           1.2         2.6          2.4       2.7    2.1
+debit              1.0         2.9          1.7       2.9    4.1
+
+U_early (ligne = modalite en panne, colonne = score median)
+              vibration  electrique  temperature  pression  debit
+truth                                                           
+vibration          3.3         3.1          2.4       3.2    2.7
+electrique         4.1         5.2          4.0       5.1    4.4
+temperature        1.0         1.4          1.3       1.4    1.1
+pression           3.6         4.8          3.1       5.1    3.7
+debit              1.1         1.5          1.1       1.5    1.9
+
+Concentration
+      method  z_diagonale  z_hors_diagonale  ratio
+0       RAW        18.55              0.81  23.04
+1     E_loc         7.69             -0.07    NaN
+2     U_loc        17.62              0.80  21.93
+3  U_branch        12.17              0.91  13.43
+4     E_fus        16.61              0.66  25.06
+5     U_fus         2.99              2.24   1.34
+6   U_early         3.38              2.71   1.24
+
+VRAIES ANOMALIES : la modalite la plus suspecte est-elle attendue ?
+             method    moy    bas   haut   n
+6   Toujours_debit  0.824  0.676  0.941  34
+1            E_fus  0.794  0.647  0.912  34
+3         E_single  0.794  0.647  0.912  34
+2            E_loc  0.794  0.647  0.912  34
+7         U_branch  0.794  0.647  0.912  34
+5              RAW  0.794  0.647  0.912  34
+8          U_early  0.794  0.647  0.912  34
+11        U_single  0.765  0.618  0.882  34
+10           U_loc  0.765  0.618  0.882  34
+4          NLL_fus  0.735  0.588  0.882  34
+9            U_fus  0.706  0.559  0.853  34
+0          E_early  0.647  0.471  0.794  34
+method              RAW        E_fus        U_loc        U_fus     U_branch
+family                                                                     
+ajout_eau   temperature    vibration  temperature        debit  temperature
+balourd       vibration    vibration    vibration     pression    vibration
+cavitation        debit        debit        debit        debit        debit
+eau_chaude  temperature  temperature  temperature  temperature  temperature
+fuite             debit        debit        debit        debit        debit
+valve1            debit        debit        debit        debit        debit
+valve2            debit        debit        debit        debit        debit
+
+Profil median RAW
+             vibration  electrique  temperature  pression    debit
+family                                                           
+ajout_eau        10.6         0.9        122.1      -0.8     24.7
+balourd       40792.0        -0.1          0.5      -0.4      4.6
+cavitation        7.7        -0.7         19.4      -0.0  19963.3
+eau_chaude        1.5        -0.7       2886.0       0.8     60.6
+fuite            -0.0        -0.9          4.8       0.4     12.3
+valve1           -0.6        -0.4          3.1      -0.6     35.6
+valve2           -0.6        -0.6          0.3      -0.5     28.0
+
+Profil median E_fus
+             vibration  electrique  temperature  pression   debit
+family                                                          
+ajout_eau        43.7         1.8         20.6       0.4     9.1
+balourd        5998.6      1306.3       4365.4     976.4  2217.9
+cavitation      124.5        82.9        913.1     105.0  2389.5
+eau_chaude      159.3        38.5        269.2      27.3    35.6
+fuite             0.3        -0.5          1.4       0.8     2.3
+valve1            0.3         0.3          2.1      -0.2     5.7
+valve2           -0.2        -0.6          0.3      -0.3     2.2
+
+Profil median U_loc
+             vibration  electrique  temperature  pression    debit
+family                                                           
+ajout_eau         8.3         0.2         84.3      -0.4     11.5
+balourd       30426.9        -0.2          0.3      -0.2      2.6
+cavitation        4.9        -0.3         22.9      -0.2  16519.5
+eau_chaude        2.4        -0.0       1499.1       0.6     27.5
+fuite            -0.0        -0.3          3.1       0.7      9.2
+valve1           -0.5         0.3          2.7      -0.3     29.1
+valve2           -0.5        -0.1          0.1      -0.2     22.9
+
+Profil median U_fus
+             vibration  electrique  temperature  pression   debit
+family                                                          
+ajout_eau        33.0        22.4         34.8      20.8    33.1
+balourd       19120.8     21465.1       7139.7   27884.4  7015.5
+cavitation      727.1      7958.1        951.7    4164.8  9510.7
+eau_chaude      578.1       406.6        707.5     345.6   366.0
+fuite             0.7         2.8          2.7       3.0     6.2
+valve1            2.0         9.2          5.3       7.5    17.9
+valve2            0.2         2.4          1.5       2.2     8.6
+
+Profil median U_branch
+             vibration  electrique  temperature  pression    debit
+family                                                           
+ajout_eau         9.5         0.4         70.6      -0.2     14.6
+balourd       42756.4         1.5          0.3       2.9      2.3
+cavitation        7.4         0.5         14.6       1.2  12036.8
+eau_chaude        2.5         0.3       1138.1       0.6     52.9
+fuite             0.2         0.3          3.3       1.1      8.3
+valve1           -0.4         0.6          2.5       0.2     30.6
+valve2           -0.6        -0.1         -0.1       0.1     14.9
+method      E_fus   RAW  U_branch  U_fus  U_loc
+family                                         
+ajout_eau    0.00  0.00      0.00   1.00   0.00
+balourd      1.00  1.00      1.00   0.20   1.00
+cavitation   0.50  1.00      1.00   1.00   0.50
+eau_chaude   1.00  1.00      1.00   1.00   1.00
+fuite        1.00  0.75      0.75   0.75   0.75
+valve1       0.75  0.81      0.81   0.75   0.81
+valve2       1.00  0.75      0.75   0.75   0.75
+
+fenetres anormales 13010
+
+Correlations de Spearman sur les fenetres anormales
+       modalite  U_loc_vs_brut  U_fus_vs_E_fus  U_loc_vs_E_fus  U_branch_vs_U_loc
+0    vibration           0.92            0.81            0.78               0.85
+1   electrique           0.45            0.73            0.27               0.35
+2  temperature           0.98            0.81            0.39               0.93
+3     pression           0.68            0.57            0.44               0.45
+4        debit           0.98            0.68            0.35               0.94
+
+Clustering des profils (k=7 familles)
+             ARI           NMI       
+           mean    std   mean    std
+score                               
+E_fus     0.187  0.003  0.362  0.002
+RAW       0.217  0.014  0.403  0.006
+U_branch  0.217  0.000  0.396  0.000
+U_fus     0.128  0.000  0.289  0.000
+U_loc     0.215  0.008  0.403  0.003
+
+Sans l'amplitude (intensite 3)
+              method  drift  noise  offset  shuffle  stuck    moy    bas   haut
+0             E_loc  0.719  0.993   0.649    0.275  0.049  0.787  0.764  0.808
+1  E_sans_amplitude  0.300  0.842   0.186    0.319  0.146  0.443  0.425  0.460
+2             U_loc  0.660  0.923   0.853    0.207  0.207  0.812  0.768  0.851
+3  U_sans_amplitude  0.320  0.532   0.333    0.225  0.341  0.395  0.377  0.412
+4              brut  0.712  0.893   0.876    0.200  0.232  0.827  0.772  0.875
+             pente_U  spearman_U_brut  pente_E  spearman_E_brut
+modalite                                                       
+debit           0.81             0.71    -0.13             0.19
+electrique      0.83             0.38     0.96             0.90
+pression        1.00             0.60     0.97             0.92
+temperature     0.85             0.89     0.21             0.30
+vibration       1.02             0.91     0.22             0.68
+
+Confiance dans l'explication
+                 mesure    moy    bas   haut
+0                 base  0.758  0.720  0.791
+1            auc_votes  0.782  0.757  0.805
+2            auc_ecart  0.858  0.830  0.881
+3  auc_vote_plus_ecart  0.854  0.830  0.875
+couverture    0.2    0.4    0.6    0.8    1.0
+confiance                                    
+ecart       0.981  0.960  0.909  0.843  0.758
+votes       0.908  0.897  0.884  0.833  0.758
+
+T : stabilite sur pannes injectees (intensite 3)
+     score    T  relerr_med  top1_agree    tau  top1_acc  cv_theorique
+0   E_fus    2       0.029       0.938  0.864     0.827         1.414
+1   E_fus    3       0.024       0.950  0.888     0.828         1.000
+2   E_fus    5       0.018       0.961  0.913     0.826         0.707
+3   E_fus   10       0.013       0.973  0.939     0.826         0.471
+4   E_fus   20       0.009       0.981  0.956     0.825         0.324
+5   E_fus   30       0.007       0.984  0.964     0.826         0.263
+6   E_fus   50       0.006       0.988  0.973     0.825         0.202
+7   E_fus   75       0.005       0.991  0.978     0.825         0.164
+8   E_fus  100       0.004       0.991  0.981     0.825         0.142
+9   E_fus  150       0.003       0.994  0.984     0.825         0.116
+10  E_fus  200       0.003       0.995  0.986     0.824         0.100
+11  E_fus  300       0.003       0.996  0.988     0.823         0.082
+12  E_loc    2       0.024       0.945  0.921     0.788         1.414
+13  E_loc    3       0.019       0.955  0.938     0.787         1.000
+14  E_loc    5       0.014       0.968  0.954     0.782         0.707
+15  E_loc   10       0.009       0.978  0.969     0.780         0.471
+16  E_loc   20       0.007       0.984  0.979     0.778         0.324
+17  E_loc   30       0.005       0.987  0.983     0.777         0.263
+18  E_loc   50       0.004       0.990  0.988     0.777         0.202
+19  E_loc   75       0.003       0.992  0.991     0.777         0.164
+20  E_loc  100       0.003       0.992  0.992     0.777         0.142
+21  E_loc  150       0.002       0.993  0.994     0.777         0.116
+22  E_loc  200       0.002       0.994  0.994     0.777         0.100
+23  E_loc  300       0.002       0.994  0.996     0.777         0.082
+24  U_fus    2       0.624       0.449  0.355     0.272         1.414
+25  U_fus    3       0.488       0.528  0.454     0.296         1.000
+26  U_fus    5       0.370       0.603  0.552     0.319         0.707
+27  U_fus   10       0.262       0.687  0.655     0.340         0.471
+28  U_fus   20       0.186       0.767  0.742     0.357         0.324
+29  U_fus   30       0.155       0.800  0.784     0.364         0.263
+30  U_fus   50       0.121       0.838  0.825     0.369         0.202
+31  U_fus   75       0.099       0.864  0.855     0.376         0.164
+32  U_fus  100       0.087       0.878  0.872     0.380         0.142
+33  U_fus  150       0.072       0.900  0.894     0.378         0.116
+34  U_fus  200       0.063       0.914  0.906     0.380         0.100
+35  U_fus  300       0.053       0.926  0.922     0.382         0.082
+36  U_loc    2       0.498       0.756  0.559     0.691         1.414
+37  U_loc    3       0.385       0.824  0.640     0.742         1.000
+38  U_loc    5       0.288       0.875  0.719     0.776         0.707
+39  U_loc   10       0.199       0.917  0.797     0.801         0.471
+40  U_loc   20       0.139       0.944  0.854     0.811         0.324
+41  U_loc   30       0.112       0.954  0.881     0.815         0.263
+42  U_loc   50       0.087       0.964  0.907     0.816         0.202
+43  U_loc   75       0.072       0.971  0.924     0.818         0.164
+44  U_loc  100       0.062       0.975  0.934     0.819         0.142
+45  U_loc  150       0.051       0.978  0.945     0.819         0.116
+46  U_loc  200       0.045       0.981  0.952     0.820         0.100
+47  U_loc  300       0.038       0.984  0.960     0.820         0.082
+
+T : vraies anomalies
+     score    T  relerr_med  top1_agree    tau
+0   E_fus    2       0.094       0.789  0.785
+1   E_fus    3       0.075       0.824  0.814
+2   E_fus    5       0.058       0.865  0.852
+3   E_fus   10       0.040       0.908  0.895
+4   E_fus   20       0.028       0.933  0.925
+5   E_fus   30       0.023       0.949  0.939
+6   E_fus   50       0.018       0.960  0.953
+7   E_fus   75       0.015       0.967  0.961
+8   E_fus  100       0.013       0.970  0.965
+9   E_fus  150       0.011       0.976  0.972
+10  E_fus  200       0.010       0.977  0.974
+11  E_fus  300       0.008       0.980  0.979
+12  E_loc    2       0.032       0.871  0.870
+13  E_loc    3       0.025       0.893  0.896
+14  E_loc    5       0.018       0.918  0.925
+15  E_loc   10       0.012       0.946  0.951
+16  E_loc   20       0.008       0.963  0.967
+17  E_loc   30       0.007       0.971  0.974
+18  E_loc   50       0.005       0.978  0.979
+19  E_loc   75       0.004       0.982  0.982
+20  E_loc  100       0.004       0.983  0.985
+21  E_loc  150       0.003       0.985  0.986
+22  E_loc  200       0.003       0.987  0.987
+23  E_loc  300       0.002       0.989  0.990
+24  U_fus    2       0.645       0.544  0.431
+25  U_fus    3       0.509       0.623  0.532
+26  U_fus    5       0.388       0.706  0.625
+27  U_fus   10       0.273       0.766  0.715
+28  U_fus   20       0.197       0.832  0.792
+29  U_fus   30       0.163       0.860  0.826
+30  U_fus   50       0.128       0.889  0.857
+31  U_fus   75       0.106       0.908  0.881
+32  U_fus  100       0.092       0.916  0.893
+33  U_fus  150       0.077       0.928  0.912
+34  U_fus  200       0.068       0.936  0.921
+35  U_fus  300       0.056       0.946  0.932
+36  U_loc    2       0.488       0.838  0.637
+37  U_loc    3       0.377       0.886  0.710
+38  U_loc    5       0.283       0.914  0.773
+39  U_loc   10       0.197       0.948  0.836
+40  U_loc   20       0.137       0.964  0.881
+41  U_loc   30       0.112       0.974  0.905
+42  U_loc   50       0.087       0.977  0.924
+43  U_loc   75       0.072       0.983  0.936
+44  U_loc  100       0.063       0.985  0.945
+45  U_loc  150       0.052       0.989  0.955
+46  U_loc  200       0.046       0.989  0.960
+47  U_loc  300       0.038       0.990  0.966
+
+T : fenetres normales
+     score    T  relerr_med  top1_agree    tau
+24  U_fus    2       0.630       0.422  0.356
+25  U_fus    3       0.490       0.481  0.449
+26  U_fus    5       0.368       0.568  0.551
+27  U_fus   10       0.264       0.652  0.669
+28  U_fus   20       0.194       0.726  0.739
+29  U_fus   30       0.155       0.762  0.783
+30  U_fus   50       0.121       0.813  0.832
+31  U_fus   75       0.099       0.830  0.857
+32  U_fus  100       0.086       0.862  0.878
+33  U_fus  150       0.072       0.886  0.901
+34  U_fus  200       0.064       0.904  0.911
+35  U_fus  300       0.053       0.921  0.931
+36  U_loc    2       0.499       0.591  0.416
+37  U_loc    3       0.380       0.652  0.516
+38  U_loc    5       0.292       0.708  0.603
+39  U_loc   10       0.200       0.775  0.706
+40  U_loc   20       0.135       0.846  0.789
+41  U_loc   30       0.116       0.862  0.822
+42  U_loc   50       0.088       0.888  0.868
+43  U_loc   75       0.071       0.891  0.885
+44  U_loc  100       0.062       0.914  0.899
+45  U_loc  150       0.052       0.923  0.918
+46  U_loc  200       0.045       0.939  0.931
+47  U_loc  300       0.038       0.943  0.940
+
+Dispersion entre modeles
+ seed      0      1      2
+T                        
+2     0.754  0.755  0.760
+3     0.822  0.825  0.824
+5     0.878  0.875  0.873
+10    0.918  0.915  0.919
+20    0.943  0.940  0.950
+30    0.950  0.952  0.959
+50    0.962  0.959  0.971
+75    0.972  0.966  0.976
+100   0.976  0.970  0.979
+150   0.980  0.974  0.981
+200   0.982  0.978  0.984
+300   0.984  0.982  0.986
+
+T selon le nombre de modalites comparees (Top-1 identique a la reference)
+ M        2      3      4      5
+T                              
+2    0.881  0.823  0.785  0.756
+3    0.920  0.876  0.846  0.824
+5    0.946  0.915  0.892  0.875
+10   0.967  0.946  0.930  0.917
+20   0.978  0.963  0.952  0.944
+30   0.983  0.970  0.961  0.954
+50   0.986  0.977  0.970  0.964
+75   0.989  0.982  0.976  0.971
+100  0.990  0.984  0.979  0.975
+150  0.992  0.986  0.982  0.978
+200  0.993  0.988  0.984  0.981
+300  0.994  0.990  0.987  0.984
+M        2      3      4      5
+T                              
+2    0.664  0.547  0.486  0.449
+3    0.724  0.619  0.563  0.528
+5    0.782  0.690  0.637  0.603
+10   0.837  0.760  0.715  0.687
+20   0.878  0.822  0.788  0.767
+30   0.899  0.850  0.820  0.800
+50   0.919  0.879  0.855  0.838
+75   0.933  0.899  0.878  0.864
+100  0.941  0.910  0.891  0.878
+150  0.951  0.927  0.911  0.900
+200  0.957  0.936  0.923  0.914
+300  0.965  0.947  0.935  0.926
+M        2      3      4      5
+T                              
+2    0.964  0.950  0.942  0.938
+3    0.969  0.958  0.952  0.950
+5    0.976  0.967  0.963  0.961
+10   0.982  0.976  0.974  0.973
+20   0.987  0.983  0.981  0.981
+30   0.989  0.985  0.984  0.984
+50   0.992  0.989  0.988  0.988
+75   0.994  0.992  0.991  0.991
+100  0.994  0.992  0.991  0.991
+150  0.995  0.994  0.993  0.994
+200  0.996  0.995  0.994  0.995
+300  0.997  0.996  0.996  0.996
+
+T minimum
+ niveau    0.90   0.95   0.99
+score M                     
+E_fus 2    2.0    2.0   50.0
+      3    2.0    2.0   75.0
+      4    2.0    3.0   75.0
+      5    2.0    3.0   75.0
+E_loc 2    2.0    2.0   10.0
+      3    2.0    2.0   30.0
+      4    2.0    2.0   50.0
+      5    2.0    3.0   50.0
+U_fus 2   50.0  150.0    NaN
+      3  100.0    NaN    NaN
+      4  150.0    NaN    NaN
+      5  150.0    NaN    NaN
+U_loc 2    3.0   10.0  100.0
+      3    5.0   20.0  300.0
+      4   10.0   20.0    NaN
+      5   10.0   30.0    NaN
+
+Decomposition
+           total  fusion_seule  enc_vibration  enc_electrique  enc_temperature  enc_pression  enc_debit
+kind                                                                                                  
+drift    0.1163        0.0900         0.0023          0.0013           0.0088        0.0010     0.0022
+noise    0.1548        0.1048         0.0026          0.0014           0.0112        0.0013     0.0024
+normale  0.0865        0.0657         0.0014          0.0009           0.0064        0.0008     0.0017
+offset   0.1876        0.1503         0.0029          0.0015           0.0115        0.0013     0.0025
+reelle   1.0709        0.8390         0.0021          0.0011           0.0327        0.0009     0.0346
+
+Cout
+ [{'n_windows': 840, 'full_ms_par_fenetre_T100': 1.774903422310239, 'branche_ms_par_fenetre_T100': 6.361241000039237, 'fusion_ms_par_fenetre_T100': 1.2768157890864782}, {'n_windows': 840, 'full_ms_par_fenetre_T100': 1.6648758025396437, 'branche_ms_par_fenetre_T100': 6.331114258084979, 'fusion_ms_par_fenetre_T100': 1.3406759216671897}, {'n_windows': 840, 'full_ms_par_fenetre_T100': 1.681932665052868, 'branche_ms_par_fenetre_T100': 6.5446490333193825, 'fusion_ms_par_fenetre_T100': 1.3478191125960577}]

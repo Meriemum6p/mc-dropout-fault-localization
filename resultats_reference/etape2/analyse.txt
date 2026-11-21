@@ -1,0 +1,683 @@
+
+==========================================================================================
+SKAB : PANNES INJECTEES  (graines [np.int64(0), np.int64(1), np.int64(2)], 33 unites)
+==========================================================================================
+
+Top-1, intensites 3 et 5 (hasard = 0,20)
+       methode   moy   bas  haut  n
+       km_ens 0.906 0.881 0.929 33
+   km_mod_k16 0.900 0.877 0.921 33
+       km_mod 0.900 0.876 0.921 33
+      gmm_mod 0.896 0.870 0.920 33
+   km_mod_k32 0.895 0.870 0.916 33
+     kmz_dist 0.892 0.867 0.914 33
+    km_mod_k4 0.891 0.864 0.915 33
+    km_global 0.887 0.853 0.915 33
+          RAW 0.884 0.844 0.918 33
+   km_mod_abs 0.882 0.861 0.899 33
+    mlp_U_loc 0.879 0.845 0.908 33
+    cnn_E_fus 0.875 0.847 0.898 33
+    mlp_E_fus 0.873 0.848 0.894 33
+      RAW_abs 0.873 0.834 0.905 33
+mlp_U_loc_abs 0.872 0.840 0.900 33
+          TPL 0.866 0.827 0.901 33
+    km_mod_k2 0.865 0.835 0.893 33
+cnn_E_fus_abs 0.859 0.834 0.879 33
+      TPL_abs 0.858 0.821 0.891 33
+mlp_E_fus_abs 0.855 0.833 0.874 33
+      kmz_var 0.854 0.822 0.881 33
+    cnn_E_loc 0.849 0.831 0.865 33
+    cnn_U_loc 0.838 0.793 0.877 33
+    mlp_E_loc 0.834 0.817 0.851 33
+cnn_U_loc_abs 0.829 0.786 0.866 33
+   km_ens_var 0.667 0.624 0.705 33
+         TEMP 0.631 0.618 0.644 33
+    cnn_U_fus 0.363 0.339 0.388 33
+    mlp_U_fus 0.362 0.339 0.385 33
+   kmz_instab 0.256 0.243 0.268 33
+
+Top-1, toutes intensites
+       methode   moy   bas  haut
+   km_mod_k16 0.767 0.737 0.794
+       km_ens 0.765 0.733 0.795
+   km_mod_k32 0.765 0.735 0.793
+       km_mod 0.762 0.731 0.791
+      gmm_mod 0.762 0.727 0.793
+    km_global 0.760 0.718 0.797
+    cnn_E_fus 0.755 0.721 0.786
+    mlp_E_fus 0.754 0.721 0.782
+    km_mod_k4 0.748 0.713 0.779
+    cnn_E_loc 0.738 0.717 0.756
+     kmz_dist 0.731 0.702 0.757
+          RAW 0.726 0.680 0.768
+   km_mod_abs 0.719 0.695 0.740
+    mlp_E_loc 0.719 0.698 0.737
+cnn_E_fus_abs 0.717 0.688 0.740
+mlp_E_fus_abs 0.715 0.688 0.738
+
+Par panne (toutes intensites)
+ panne          drift  noise  offset  shuffle  stuck
+methode                                            
+RAW            0.612  0.795   0.773    0.200  0.240
+RAW_abs        0.557  0.761   0.742    0.200  0.461
+TEMP           0.468  0.963   0.200    0.264  0.987
+TPL            0.579  0.770   0.743    0.199  0.239
+TPL_abs        0.547  0.751   0.727    0.200  0.393
+cnn_E_fus      0.669  0.909   0.687    0.203  0.156
+cnn_E_fus_abs  0.609  0.883   0.657    0.203  0.579
+cnn_U_fus      0.274  0.344   0.325    0.211  0.205
+cnn_U_loc      0.527  0.765   0.707    0.203  0.208
+cnn_U_loc_abs  0.492  0.743   0.687    0.205  0.402
+gmm_mod        0.649  0.883   0.753    0.215  0.181
+km_ens         0.661  0.902   0.734    0.216  0.132
+km_ens_var     0.530  0.404   0.670    0.168  0.291
+km_global      0.658  0.867   0.757    0.201  0.216
+km_mod         0.658  0.903   0.726    0.221  0.131
+km_mod_abs     0.596  0.882   0.680    0.195  0.559
+kmz_dist       0.629  0.814   0.750    0.198  0.243
+kmz_instab     0.205  0.331   0.188    0.216  0.116
+kmz_var        0.562  0.747   0.729    0.204  0.250
+mlp_E_fus      0.666  0.914   0.680    0.203  0.149
+mlp_E_fus_abs  0.605  0.890   0.651    0.202  0.588
+mlp_U_fus      0.283  0.315   0.340    0.202  0.202
+mlp_U_loc      0.582  0.799   0.732    0.209  0.216
+mlp_U_loc_abs  0.552  0.782   0.716    0.205  0.400
+
+Par intensite
+ intensite       1      2      3      5
+methode                               
+RAW         0.441  0.696  0.828  0.940
+TEMP        0.420  0.492  0.567  0.695
+TPL         0.402  0.656  0.802  0.929
+cnn_E_fus   0.525  0.745  0.837  0.912
+cnn_U_fus   0.235  0.296  0.337  0.390
+cnn_U_loc   0.374  0.616  0.768  0.908
+gmm_mod     0.497  0.759  0.854  0.938
+km_ens      0.492  0.758  0.869  0.944
+km_ens_var  0.316  0.489  0.602  0.733
+km_global   0.509  0.759  0.852  0.922
+km_mod      0.493  0.757  0.861  0.939
+kmz_dist    0.429  0.710  0.840  0.944
+kmz_instab  0.218  0.236  0.250  0.261
+kmz_var     0.375  0.635  0.787  0.920
+mlp_E_fus   0.526  0.742  0.836  0.910
+mlp_U_fus   0.234  0.292  0.337  0.388
+mlp_U_loc   0.399  0.661  0.814  0.943
+
+Differences appariees de Top-1 (intensites 3 et 5)
+          A         B   diff    bas   haut  n                     net
+ mlp_U_loc       RAW -0.005 -0.020  0.012 33 pas de difference nette
+ mlp_U_loc mlp_E_fus  0.005 -0.021  0.029 33 pas de difference nette
+ cnn_U_loc       RAW -0.046 -0.063 -0.031 33                 B mieux
+ cnn_U_loc cnn_E_fus -0.037 -0.068 -0.010 33                 B mieux
+ mlp_U_loc       TPL  0.013 -0.003  0.029 33 pas de difference nette
+ cnn_U_loc       TPL -0.028 -0.049 -0.009 33                 B mieux
+ mlp_E_fus       TPL  0.007 -0.022  0.039 33 pas de difference nette
+ cnn_E_fus       TPL  0.009 -0.018  0.039 33 pas de difference nette
+ mlp_E_fus       RAW -0.011 -0.035  0.017 33 pas de difference nette
+ cnn_E_fus       RAW -0.009 -0.032  0.017 33 pas de difference nette
+ cnn_U_loc mlp_U_loc -0.041 -0.055 -0.028 33                 B mieux
+ cnn_E_fus mlp_E_fus  0.002 -0.005  0.007 33 pas de difference nette
+ cnn_U_fus mlp_U_fus  0.001 -0.012  0.014 33 pas de difference nette
+ cnn_E_loc mlp_E_loc  0.014  0.010  0.019 33                 A mieux
+ mlp_U_loc mlp_U_fus  0.516  0.496  0.536 33                 A mieux
+ cnn_U_loc cnn_U_fus  0.474  0.447  0.501 33                 A mieux
+    km_mod       RAW  0.016 -0.010  0.046 33 pas de difference nette
+    km_mod       TPL  0.034  0.006  0.064 33                 A mieux
+    km_mod mlp_U_loc  0.021  0.001  0.044 33                 A mieux
+    km_mod mlp_E_fus  0.026  0.011  0.042 33                 A mieux
+    km_mod cnn_U_loc  0.062  0.035  0.093 33                 A mieux
+    km_mod cnn_E_fus  0.025  0.012  0.040 33                 A mieux
+    km_mod km_global  0.012 -0.007  0.036 33 pas de difference nette
+   kmz_var  kmz_dist -0.039 -0.054 -0.026 33                 B mieux
+kmz_instab  kmz_dist -0.637 -0.657 -0.614 33                 B mieux
+   kmz_var mlp_U_loc -0.025 -0.034 -0.014 33                 B mieux
+km_ens_var    km_ens -0.239 -0.264 -0.216 33                 B mieux
+
+stuck
+             A             B   diff    bas   haut  n                     net
+    cnn_E_fus     mlp_E_fus  0.007  0.001  0.014 33                 A mieux
+    cnn_U_loc     mlp_U_loc -0.008 -0.019  0.002 33 pas de difference nette
+         TEMP           RAW  0.748  0.733  0.762 33                 A mieux
+         TEMP     cnn_E_fus  0.831  0.816  0.847 33                 A mieux
+         TEMP cnn_E_fus_abs  0.408  0.353  0.467 33                 A mieux
+cnn_E_fus_abs mlp_E_fus_abs -0.009 -0.020  0.001 33 pas de difference nette
+       km_mod          TEMP -0.856 -0.871 -0.841 33                 B mieux
+
+shuffle
+             A             B   diff    bas   haut  n                     net
+    cnn_E_fus     mlp_E_fus  0.000 -0.003  0.003 33 pas de difference nette
+    cnn_U_loc     mlp_U_loc -0.006 -0.014  0.001 33 pas de difference nette
+         TEMP           RAW  0.064  0.037  0.089 33                 A mieux
+         TEMP     cnn_E_fus  0.061  0.035  0.087 33                 A mieux
+         TEMP cnn_E_fus_abs  0.060  0.035  0.086 33                 A mieux
+cnn_E_fus_abs mlp_E_fus_abs  0.001 -0.003  0.005 33 pas de difference nette
+       km_mod          TEMP -0.043 -0.074 -0.012 33                 B mieux
+
+Par modalite en panne (intensites 3 et 5)
+ modalite   debit  electrique  pression  temperature  vibration
+base                                                          
+RAW        0.824       0.958     0.944        0.840      0.855
+TPL        0.806       0.954     0.932        0.844      0.794
+cnn_E_fus  0.711       0.979     0.970        0.797      0.916
+cnn_U_loc  0.799       0.879     0.859        0.837      0.814
+km_mod     0.764       0.988     0.981        0.845      0.919
+mlp_E_fus  0.703       0.983     0.976        0.783      0.920
+mlp_U_loc  0.802       0.952     0.944        0.867      0.829
+
+Melange par modalite
+ modalite   debit  electrique  pression  temperature  vibration
+base                                                          
+RAW        0.182       0.141     0.134        0.372      0.171
+TPL        0.147       0.089     0.097        0.534      0.129
+cnn_E_fus  0.256       0.152     0.190        0.213      0.202
+cnn_U_loc  0.170       0.169     0.143        0.391      0.143
+km_mod     0.258       0.208     0.195        0.245      0.197
+mlp_E_fus  0.233       0.149     0.199        0.203      0.229
+mlp_U_loc  0.140       0.204     0.147        0.406      0.149
+
+Blocage par modalite
+ modalite   debit  electrique  pression  temperature  vibration
+base                                                          
+RAW        0.233       0.214     0.232        0.332      0.188
+TPL        0.188       0.196     0.178        0.486      0.146
+cnn_E_fus  0.040       0.250     0.261        0.093      0.136
+cnn_U_loc  0.187       0.212     0.151        0.312      0.180
+km_mod     0.034       0.197     0.182        0.170      0.072
+mlp_E_fus  0.025       0.253     0.260        0.076      0.134
+mlp_U_loc  0.124       0.291     0.262        0.267      0.138
+
+Sensibilite a k
+ methode
+km_mod        0.900
+km_mod_k16    0.900
+km_mod_k2     0.865
+km_mod_k32    0.895
+km_mod_k4     0.891
+
+Correlations de Spearman (fenetres normales)
+ modalite            debit  electrique  pression  temperature  vibration
+a         b                                                            
+cnn_U_loc RAW        0.82        0.53      0.67         0.94       0.93
+          TPL        0.81        0.54      0.65         0.63       0.93
+km_mod    RAW        0.50        0.93      0.97         0.65       0.90
+kmz_var   kmz_dist   0.73        0.64      0.70         0.73       0.87
+mlp_U_loc RAW        0.72        0.39      0.61         0.90       0.91
+          TPL        0.74        0.46      0.62         0.63       0.92
+          km_mod     0.59        0.32      0.61         0.63       0.85
+
+==========================================================================================
+HYDRAULIQUE : PANNES INJECTEES  (graines [np.int64(0), np.int64(1), np.int64(2)], 66 unites)
+==========================================================================================
+
+Top-1, intensites 3 et 5 (hasard = 0,20)
+       methode   moy   bas  haut  n
+   km_mod_k32 0.997 0.994 0.999 66
+   km_mod_k16 0.997 0.994 0.999 66
+       km_mod 0.997 0.993 0.999 66
+   km_mod_abs 0.997 0.993 0.999 66
+       km_ens 0.996 0.992 0.999 66
+    cnn_E_loc 0.995 0.991 0.998 66
+    km_mod_k4 0.994 0.990 0.997 66
+    mlp_E_loc 0.994 0.990 0.997 66
+     kmz_dist 0.994 0.992 0.996 66
+      gmm_mod 0.991 0.982 0.996 66
+    km_global 0.989 0.985 0.992 66
+    mlp_U_loc 0.988 0.983 0.992 66
+mlp_U_loc_abs 0.985 0.981 0.989 66
+    km_mod_k2 0.969 0.962 0.976 66
+    cnn_U_loc 0.959 0.950 0.968 66
+cnn_U_loc_abs 0.949 0.942 0.956 66
+          RAW 0.931 0.911 0.950 66
+    cnn_E_fus 0.929 0.919 0.940 66
+cnn_E_fus_abs 0.929 0.919 0.940 66
+          TPL 0.921 0.896 0.945 66
+    mlp_E_fus 0.919 0.907 0.930 66
+mlp_E_fus_abs 0.919 0.907 0.930 66
+      kmz_var 0.911 0.897 0.926 66
+      RAW_abs 0.907 0.889 0.923 66
+      TPL_abs 0.896 0.873 0.917 66
+   km_ens_var 0.754 0.724 0.783 66
+         TEMP 0.704 0.695 0.711 66
+   kmz_instab 0.400 0.373 0.427 66
+    cnn_U_fus 0.249 0.241 0.256 66
+    mlp_U_fus 0.248 0.241 0.254 66
+
+Top-1, toutes intensites
+       methode   moy   bas  haut
+   km_mod_k32 0.985 0.978 0.990
+   km_mod_k16 0.983 0.976 0.988
+    km_global 0.983 0.976 0.987
+       km_mod 0.981 0.974 0.986
+       km_ens 0.980 0.973 0.985
+   km_mod_abs 0.979 0.972 0.984
+    cnn_E_loc 0.975 0.968 0.980
+    mlp_E_loc 0.973 0.967 0.979
+      gmm_mod 0.972 0.960 0.981
+    km_mod_k4 0.970 0.961 0.977
+     kmz_dist 0.970 0.964 0.975
+    mlp_U_loc 0.939 0.929 0.950
+    cnn_E_fus 0.934 0.923 0.944
+cnn_E_fus_abs 0.934 0.923 0.944
+    mlp_E_fus 0.926 0.915 0.937
+mlp_E_fus_abs 0.926 0.915 0.937
+
+Par panne (toutes intensites)
+ panne          drift  noise  offset  shuffle  stuck
+methode                                            
+RAW            0.683  0.885   0.841    0.200  0.306
+RAW_abs        0.618  0.803   0.774    0.200  0.396
+TEMP           0.840  0.999   0.200    0.977  0.922
+TPL            0.697  0.873   0.830    0.546  0.569
+TPL_abs        0.605  0.790   0.765    0.389  0.477
+cnn_E_fus      0.937  0.991   0.874    0.849  0.834
+cnn_E_fus_abs  0.937  0.991   0.874    0.838  0.826
+cnn_U_fus      0.225  0.277   0.234    0.200  0.164
+cnn_U_loc      0.787  0.982   0.884    0.680  0.342
+cnn_U_loc_abs  0.722  0.974   0.856    0.660  0.476
+gmm_mod        0.970  0.992   0.954    0.834  0.800
+km_ens         0.983  0.997   0.960    0.874  0.842
+km_ens_var     0.689  0.502   0.779    0.334  0.571
+km_global      0.977  0.996   0.975    0.865  0.845
+km_mod         0.983  0.997   0.962    0.886  0.849
+km_mod_abs     0.983  0.997   0.957    0.863  0.830
+kmz_dist       0.962  0.997   0.950    0.808  0.752
+kmz_instab     0.365  0.508   0.299    0.432  0.346
+kmz_var        0.686  0.897   0.783    0.600  0.427
+mlp_E_fus      0.921  0.970   0.888    0.843  0.815
+mlp_E_fus_abs  0.921  0.970   0.888    0.825  0.800
+mlp_U_fus      0.230  0.268   0.236    0.203  0.132
+mlp_U_loc      0.904  0.993   0.920    0.791  0.544
+mlp_U_loc_abs  0.846  0.989   0.892    0.792  0.631
+
+Par intensite
+ intensite       1      2      3      5
+methode                               
+RAW         0.569  0.781  0.892  0.971
+TEMP        0.640  0.671  0.696  0.711
+TPL         0.579  0.778  0.882  0.961
+cnn_E_fus   0.938  0.939  0.933  0.926
+cnn_U_fus   0.239  0.245  0.248  0.249
+cnn_U_loc   0.741  0.878  0.940  0.978
+gmm_mod     0.930  0.977  0.987  0.995
+km_ens      0.943  0.985  0.994  0.998
+km_ens_var  0.504  0.617  0.706  0.801
+km_global   0.972  0.981  0.987  0.991
+km_mod      0.942  0.987  0.995  0.999
+kmz_dist    0.921  0.970  0.989  0.999
+kmz_instab  0.371  0.391  0.404  0.397
+kmz_var     0.566  0.766  0.869  0.954
+mlp_E_fus   0.935  0.932  0.924  0.913
+mlp_U_fus   0.244  0.239  0.244  0.251
+mlp_U_loc   0.840  0.942  0.980  0.996
+
+Differences appariees de Top-1 (intensites 3 et 5)
+          A         B   diff    bas   haut  n                     net
+ mlp_U_loc       RAW  0.057  0.041  0.073 66                 A mieux
+ mlp_U_loc mlp_E_fus  0.069  0.054  0.084 66                 A mieux
+ cnn_U_loc       RAW  0.028  0.016  0.041 66                 A mieux
+ cnn_U_loc cnn_E_fus  0.030  0.011  0.048 66                 A mieux
+ mlp_U_loc       TPL  0.067  0.046  0.089 66                 A mieux
+ cnn_U_loc       TPL  0.038  0.021  0.056 66                 A mieux
+ mlp_E_fus       TPL -0.003 -0.035  0.032 66 pas de difference nette
+ cnn_E_fus       TPL  0.008 -0.024  0.041 66 pas de difference nette
+ mlp_E_fus       RAW -0.013 -0.040  0.016 66 pas de difference nette
+ cnn_E_fus       RAW -0.002 -0.029  0.026 66 pas de difference nette
+ cnn_U_loc mlp_U_loc -0.029 -0.035 -0.023 66                 B mieux
+ cnn_E_fus mlp_E_fus  0.011  0.004  0.018 66                 A mieux
+ cnn_U_fus mlp_U_fus  0.001 -0.008  0.009 66 pas de difference nette
+ cnn_E_loc mlp_E_loc  0.001 -0.000  0.002 66 pas de difference nette
+ mlp_U_loc mlp_U_fus  0.740  0.732  0.748 66                 A mieux
+ cnn_U_loc cnn_U_fus  0.710  0.701  0.720 66                 A mieux
+    km_mod       RAW  0.066  0.047  0.086 66                 A mieux
+    km_mod       TPL  0.076  0.052  0.101 66                 A mieux
+    km_mod mlp_U_loc  0.009  0.004  0.014 66                 A mieux
+    km_mod mlp_E_fus  0.078  0.067  0.090 66                 A mieux
+    km_mod cnn_U_loc  0.038  0.029  0.047 66                 A mieux
+    km_mod cnn_E_fus  0.068  0.057  0.079 66                 A mieux
+    km_mod km_global  0.008  0.006  0.010 66                 A mieux
+   kmz_var  kmz_dist -0.082 -0.096 -0.070 66                 B mieux
+kmz_instab  kmz_dist -0.594 -0.620 -0.567 66                 B mieux
+   kmz_var mlp_U_loc -0.076 -0.088 -0.066 66                 B mieux
+km_ens_var    km_ens -0.243 -0.272 -0.214 66                 B mieux
+
+stuck
+             A             B   diff    bas   haut  n     net
+    cnn_E_fus     mlp_E_fus  0.019  0.007  0.032 66 A mieux
+    cnn_U_loc     mlp_U_loc -0.202 -0.232 -0.174 66 B mieux
+         TEMP           RAW  0.616  0.596  0.638 66 A mieux
+         TEMP     cnn_E_fus  0.089  0.050  0.123 66 A mieux
+         TEMP cnn_E_fus_abs  0.096  0.057  0.132 66 A mieux
+cnn_E_fus_abs mlp_E_fus_abs  0.027  0.014  0.040 66 A mieux
+       km_mod          TEMP -0.074 -0.113 -0.030 66 B mieux
+
+shuffle
+             A             B   diff    bas   haut  n                     net
+    cnn_E_fus     mlp_E_fus  0.006 -0.004  0.015 66 pas de difference nette
+    cnn_U_loc     mlp_U_loc -0.112 -0.130 -0.095 66                 B mieux
+         TEMP           RAW  0.777  0.762  0.789 66                 A mieux
+         TEMP     cnn_E_fus  0.129  0.106  0.149 66                 A mieux
+         TEMP cnn_E_fus_abs  0.140  0.118  0.160 66                 A mieux
+cnn_E_fus_abs mlp_E_fus_abs  0.013  0.004  0.022 66                 A mieux
+       km_mod          TEMP -0.092 -0.115 -0.067 66                 B mieux
+
+Par modalite en panne (intensites 3 et 5)
+ modalite   debit  electrique  pression  temperature  vibration
+base                                                          
+RAW        0.921       0.933     0.966        0.965      0.871
+TPL        0.906       0.957     0.954        0.945      0.844
+cnn_E_fus  0.874       0.994     0.986        0.999      0.795
+cnn_U_loc  0.949       0.948     0.990        0.989      0.920
+km_mod     1.000       0.995     1.000        1.000      0.991
+mlp_E_fus  0.883       0.986     0.994        1.000      0.730
+mlp_U_loc  0.998       0.977     0.998        0.999      0.967
+
+Melange par modalite
+ modalite   debit  electrique  pression  temperature  vibration
+base                                                          
+RAW        0.022       0.576     0.191        0.037      0.174
+TPL        0.592       0.963     0.671        0.034      0.468
+cnn_E_fus  0.983       0.995     0.998        0.301      0.966
+cnn_U_loc  0.814       0.988     0.912        0.153      0.531
+km_mod     0.991       1.000     1.000        0.463      0.976
+mlp_E_fus  0.968       0.992     0.999        0.311      0.945
+mlp_U_loc  0.984       0.997     0.978        0.108      0.890
+
+Blocage par modalite
+ modalite   debit  electrique  pression  temperature  vibration
+base                                                          
+RAW        0.671       0.009     0.727        0.038      0.085
+TPL        0.718       0.943     0.802        0.031      0.348
+cnn_E_fus  0.987       0.992     0.999        0.292      0.899
+cnn_U_loc  0.762       0.072     0.652        0.148      0.074
+km_mod     0.994       0.996     1.000        0.384      0.870
+mlp_E_fus  0.908       0.995     0.946        0.298      0.926
+mlp_U_loc  0.991       0.480     0.999        0.106      0.144
+
+Sensibilite a k
+ methode
+km_mod        0.997
+km_mod_k16    0.997
+km_mod_k2     0.969
+km_mod_k32    0.997
+km_mod_k4     0.994
+
+Correlations de Spearman (fenetres normales)
+ modalite            debit  electrique  pression  temperature  vibration
+a         b                                                            
+cnn_U_loc RAW        0.85        0.81      0.71         0.85       0.94
+          TPL        0.85        0.79      0.73         0.85       0.89
+km_mod    RAW        0.26        0.25      0.29         0.49       0.40
+kmz_var   kmz_dist   0.72        0.33      0.52         0.72       0.67
+mlp_U_loc RAW        0.87        0.62      0.77         0.89       0.93
+          TPL        0.87        0.81      0.78         0.89       0.90
+          km_mod     0.30        0.34      0.27         0.45       0.49
+
+==========================================================================================
+SKAB : DETECTION
+==========================================================================================
+       methode   moy   bas  haut  n    f1  fausses_alarmes  manquees
+    km_ens_var 0.896 0.860 0.927 34 0.617            0.048     0.522
+           TPL 0.882 0.841 0.919 34 0.628            0.092     0.480
+     km_global 0.880 0.833 0.920 34 0.550            0.076     0.579
+      kmz_dist 0.876 0.840 0.908 34 0.587            0.086     0.532
+     cnn_U_loc 0.872 0.830 0.909 34 0.634            0.089     0.475
+     cnn_U_fus 0.870 0.832 0.905 34 0.569            0.067     0.563
+     mlp_U_loc 0.870 0.824 0.911 34 0.630            0.087     0.482
+km_global_dist 0.869 0.823 0.907 34 0.533            0.091     0.588
+     mlp_E_fus 0.867 0.821 0.906 34 0.502            0.076     0.628
+     mlp_U_fus 0.866 0.822 0.905 34 0.563            0.078     0.564
+           RAW 0.865 0.813 0.911 34 0.617            0.087     0.497
+     cnn_E_fus 0.864 0.819 0.903 34 0.500            0.069     0.633
+       gmm_mod 0.863 0.820 0.901 34 0.539            0.092     0.581
+        km_ens 0.861 0.816 0.900 34 0.589            0.091     0.528
+       kmz_var 0.860 0.816 0.899 34 0.576            0.082     0.547
+        km_mod 0.851 0.804 0.893 34 0.588            0.092     0.528
+     mlp_E_loc 0.729 0.657 0.797 34 0.363            0.049     0.762
+     cnn_E_loc 0.717 0.643 0.789 34 0.376            0.052     0.750
+          TEMP 0.622 0.550 0.693 34 0.344            0.045     0.778
+    kmz_instab 0.448 0.415 0.481 34 0.011            0.010     0.995
+
+              A         B   diff    bas   haut  n                     net
+km_global_dist mlp_U_loc -0.002 -0.027  0.023 34 pas de difference nette
+        km_mod mlp_U_loc -0.019 -0.056  0.017 34 pas de difference nette
+     km_global mlp_U_loc  0.009 -0.026  0.046 34 pas de difference nette
+        km_mod       RAW -0.014 -0.058  0.031 34 pas de difference nette
+      kmz_dist mlp_U_loc  0.006 -0.021  0.036 34 pas de difference nette
+       kmz_var  kmz_dist -0.016 -0.041  0.006 34 pas de difference nette
+        km_mod mlp_E_fus -0.015 -0.048  0.016 34 pas de difference nette
+     cnn_U_loc mlp_U_loc  0.001 -0.006  0.010 34 pas de difference nette
+     cnn_E_fus mlp_E_fus -0.003 -0.016  0.011 34 pas de difference nette
+     cnn_E_fus       RAW -0.002 -0.028  0.025 34 pas de difference nette
+     mlp_U_loc       RAW  0.005 -0.007  0.022 34 pas de difference nette
+     cnn_U_loc       RAW  0.006 -0.007  0.026 34 pas de difference nette
+          TEMP       RAW -0.243 -0.309 -0.175 34                 B mieux
+
+ methode      RAW  TEMP  cnn_E_fus  cnn_U_loc  km_global_dist  km_mod  mlp_E_fus  mlp_U_loc
+famille                                                                                   
+ajout_eau   0.86  0.66       0.88       0.85            0.83    0.83       0.93       0.86
+balourd     0.92  0.82       0.89       0.92            0.90    0.88       0.89       0.92
+cavitation  0.82  0.66       0.80       0.83            0.82    0.82       0.82       0.84
+eau_chaude  0.95  0.57       0.95       0.93            0.96    0.95       0.95       0.94
+fuite       0.81  0.36       0.77       0.85            0.76    0.70       0.74       0.85
+valve1      0.86  0.62       0.87       0.87            0.88    0.87       0.87       0.86
+valve2      0.88  0.64       0.89       0.87            0.91    0.88       0.90       0.88
+
+Sensibilite a k, detection
+ methode
+km_mod        0.851
+km_mod_k16    0.838
+km_mod_k2     0.881
+km_mod_k32    0.819
+km_mod_k4     0.854
+
+SKAB, vraies anomalies : modalite attendue classee premiere
+   methode   moy   bas  haut  n
+ kmz_dist 0.853 0.735 0.971 34
+mlp_E_fus 0.853 0.735 0.941 34
+   km_mod 0.824 0.676 0.941 34
+cnn_U_loc 0.794 0.647 0.912 34
+km_global 0.794 0.647 0.912 34
+      RAW 0.765 0.618 0.882 34
+  kmz_var 0.765 0.618 0.882 34
+mlp_U_loc 0.735 0.588 0.882 34
+cnn_E_fus 0.706 0.559 0.853 34
+
+==========================================================================================
+HYDRAULIQUE : VRAIES PANNES DE COMPOSANTS
+==========================================================================================
+
+AUROC par composant
+ tache      accumulator  cooler   pump  valve
+methode                                     
+RAW              0.584   0.991  0.488  0.512
+TPL              0.591   0.991  0.512  0.514
+TEMP             0.637   0.964  0.619  0.534
+mlp_E_fus        0.641   0.985  0.673  0.603
+mlp_U_loc        0.605   0.986  0.518  0.514
+mlp_U_fus        0.640   0.984  0.514  0.505
+cnn_E_fus        0.626   0.978  0.666  0.571
+cnn_U_loc        0.572   0.984  0.482  0.524
+cnn_U_fus        0.646   0.978  0.480  0.515
+km_global        0.876   0.989  0.722  0.670
+km_mod           0.853   0.989  0.740  0.668
+kmz_dist         0.651   0.993  0.618  0.561
+kmz_var          0.529   0.990  0.469  0.466
+
+Intervalle bas
+ tache      accumulator  cooler   pump  valve
+methode                                     
+RAW              0.448   0.968  0.354  0.456
+TPL              0.454   0.971  0.386  0.448
+TEMP             0.542   0.894  0.511  0.466
+mlp_E_fus        0.520   0.948  0.591  0.543
+mlp_U_loc        0.468   0.956  0.397  0.450
+mlp_U_fus        0.521   0.953  0.387  0.436
+cnn_E_fus        0.515   0.940  0.560  0.498
+cnn_U_loc        0.439   0.947  0.357  0.460
+cnn_U_fus        0.510   0.934  0.356  0.461
+km_global        0.821   0.964  0.633  0.619
+km_mod           0.786   0.964  0.653  0.607
+kmz_dist         0.527   0.975  0.515  0.491
+kmz_var          0.396   0.968  0.350  0.402
+
+Intervalle haut
+ tache      accumulator  cooler   pump  valve
+methode                                     
+RAW              0.719   1.000  0.601  0.569
+TPL              0.725   1.000  0.622  0.582
+TEMP             0.767   1.000  0.740  0.606
+mlp_E_fus        0.741   1.000  0.773  0.667
+mlp_U_loc        0.729   1.000  0.644  0.581
+mlp_U_fus        0.737   0.999  0.618  0.561
+cnn_E_fus        0.726   0.999  0.772  0.642
+cnn_U_loc        0.696   1.000  0.620  0.578
+cnn_U_fus        0.766   1.000  0.591  0.570
+km_global        0.929   1.000  0.812  0.736
+km_mod           0.924   1.000  0.832  0.727
+kmz_dist         0.765   1.000  0.731  0.621
+kmz_var          0.661   1.000  0.585  0.517
+
+Modalite attendue classee premiere : cycles degrades
+ tache      accumulator  cooler  pump  valve
+methode                                    
+RAW               0.10    0.49  0.15   0.25
+TPL               0.10    0.49  0.20   0.24
+TEMP              0.15    0.02  0.61   0.49
+mlp_E_fus         0.27    0.17  0.15   0.53
+mlp_U_loc         0.12    0.44  0.30   0.28
+mlp_U_fus         0.30    0.01  0.35   0.31
+cnn_E_fus         0.23    0.23  0.17   0.49
+cnn_U_loc         0.17    0.37  0.25   0.25
+cnn_U_fus         0.24    0.05  0.30   0.29
+km_global         0.05    0.76  0.12   0.58
+km_mod            0.08    0.63  0.14   0.58
+kmz_dist          0.13    0.55  0.20   0.46
+kmz_var           0.19    0.71  0.43   0.34
+
+Modalite attendue classee premiere : cycles sains
+ tache      accumulator  cooler  pump  valve
+methode                                    
+RAW               0.15    0.18  0.19   0.28
+TPL               0.16    0.21  0.23   0.28
+TEMP              0.11    0.23  0.26   0.38
+mlp_E_fus         0.16    0.16  0.42   0.31
+mlp_U_loc         0.10    0.20  0.30   0.28
+mlp_U_fus         0.25    0.21  0.35   0.33
+cnn_E_fus         0.16    0.14  0.41   0.29
+cnn_U_loc         0.08    0.17  0.25   0.22
+cnn_U_fus         0.24    0.29  0.33   0.33
+km_global         0.07    0.12  0.34   0.24
+km_mod            0.09    0.14  0.38   0.25
+kmz_dist          0.05    0.16  0.30   0.34
+kmz_var           0.23    0.18  0.32   0.43
+
+AUROC par niveau
+ methode               TPL  cnn_E_fus  cnn_U_loc  km_mod  mlp_E_fus  mlp_U_loc
+tache       niveau                                                           
+accumulator 90      0.592      0.634      0.583   0.853      0.632      0.620
+            100     0.595      0.625      0.563   0.841      0.640      0.595
+            115     0.585      0.620      0.571   0.866      0.651      0.602
+cooler      3       1.000      0.985      0.990   0.997      0.993      0.993
+            20      0.983      0.972      0.977   0.981      0.977      0.979
+pump        1       0.508      0.607      0.475   0.658      0.612      0.501
+            2       0.517      0.726      0.489   0.821      0.734      0.535
+valve       73      0.521      0.677      0.531   0.858      0.722      0.533
+            80      0.514      0.533      0.529   0.644      0.573      0.510
+            90      0.506      0.503      0.513   0.502      0.514      0.499
+
+Profil median, cycles degrades
+                        z_vibration  z_electrique  z_temperature  z_pression  z_debit
+methode   tache                                                                     
+RAW       accumulator          0.1          -0.3           -0.6         0.4     -0.2
+          cooler              55.0          52.4         4848.1      1665.2   4102.0
+          pump                 0.1           1.1            0.3         0.4     -0.1
+          valve                0.1           0.1            0.0        -0.1      0.2
+TPL       accumulator          0.3           0.1           -0.6         0.7     -0.0
+          cooler             150.9         168.3         4743.4      1667.9   4686.9
+          pump                 0.4           0.6            0.3         0.6      0.1
+          valve                0.2           0.1            0.0         0.0      0.2
+cnn_E_fus accumulator          0.2           0.2            2.6         2.5      0.7
+          cooler            2849.3       62786.6        23424.2     19179.1  11055.2
+          pump                 0.1           3.6            0.3         1.0      0.6
+          valve               -0.1           0.6            0.0         0.5      1.2
+cnn_U_loc accumulator          0.2           0.1            1.0         0.8     -0.4
+          cooler              60.7          18.7         3698.0      1820.7   4635.5
+          pump                 0.2           0.4           -0.0         0.4     -0.1
+          valve               -0.0           0.1           -0.0         0.0      0.0
+km_mod    accumulator          1.0           0.7           61.1         5.9      3.6
+          cooler             273.7         790.0        75802.2     29918.0  50640.9
+          pump                 0.1           5.6            3.6         0.8      1.8
+          valve               -0.1           1.2           -0.3         2.5      1.7
+mlp_E_fus accumulator          0.5           0.3            1.4         2.3      0.7
+          cooler            4146.7       48342.2        22458.5     15309.4  14916.1
+          pump                 0.2           3.5            0.1         0.6      0.3
+          valve               -0.0           0.7            0.1         0.7      1.3
+mlp_U_loc accumulator          0.1           0.5            0.3         0.1      0.0
+          cooler             154.0          21.7         4457.0      2640.6   6524.4
+          pump                 0.1           0.9            0.3         0.3      0.3
+          valve                0.1           0.1            0.0         0.1      0.2
+
+Le seul numero du cycle predit-il l'etat du composant ? (1 ou 0 = temps et etat melanges, 0,5 = independants)
+      tache  auroc_temps_seul  cycles_sains  cycles_degrades
+accumulator             0.669           360             1089
+     cooler             1.000           489              960
+       pump             0.550           489              960
+      valve             0.526           369             1080
+
+AUROC a l'interieur d'un meme bloc de cycles (retire l'effet du temps ; seulement si le bloc contient les deux etats)
+tache   methode   moy   bas  haut  blocs
+valve       RAW 0.569 0.489 0.650     48
+valve       TPL 0.540 0.458 0.622     48
+valve      TEMP 0.621 0.555 0.687     48
+valve mlp_E_fus 0.716 0.660 0.770     48
+valve mlp_U_loc 0.596 0.557 0.636     48
+valve mlp_U_fus 0.539 0.501 0.580     48
+valve cnn_E_fus 0.687 0.630 0.740     48
+valve cnn_U_loc 0.578 0.536 0.620     48
+valve cnn_U_fus 0.531 0.493 0.571     48
+valve km_global 0.785 0.723 0.843     48
+valve    km_mod 0.780 0.716 0.841     48
+valve  kmz_dist 0.724 0.675 0.773     48
+valve   kmz_var 0.381 0.339 0.424     48
+ pump       RAW 0.548 0.337 0.746     14
+ pump       TPL 0.674 0.524 0.803     14
+ pump      TEMP 0.785 0.639 0.903     14
+ pump mlp_E_fus 0.659 0.475 0.828     14
+ pump mlp_U_loc 0.668 0.551 0.769     14
+ pump mlp_U_fus 0.579 0.466 0.695     14
+ pump cnn_E_fus 0.671 0.481 0.841     14
+ pump cnn_U_loc 0.544 0.412 0.669     14
+ pump cnn_U_fus 0.500 0.391 0.607     14
+ pump km_global 0.719 0.591 0.842     14
+ pump    km_mod 0.749 0.600 0.877     14
+ pump  kmz_dist 0.808 0.707 0.899     14
+ pump   kmz_var 0.528 0.435 0.626     14
+tache         A         B   diff    bas   haut
+valve    km_mod mlp_U_loc  0.184  0.119  0.248
+valve    km_mod mlp_E_fus  0.065  0.019  0.110
+valve    km_mod       RAW  0.212  0.112  0.311
+valve mlp_U_loc       RAW  0.027 -0.043  0.095
+valve mlp_E_fus       RAW  0.147  0.050  0.246
+valve cnn_E_fus mlp_E_fus -0.029 -0.051 -0.007
+ pump    km_mod mlp_U_loc  0.081 -0.071  0.241
+ pump    km_mod mlp_E_fus  0.090 -0.001  0.191
+ pump    km_mod       RAW  0.201  0.044  0.387
+ pump mlp_U_loc       RAW  0.119 -0.027  0.281
+ pump mlp_E_fus       RAW  0.111 -0.056  0.299
+ pump cnn_E_fus mlp_E_fus  0.011 -0.021  0.045
+
+==========================================================================================
+REGLE DE DECISION
+==========================================================================================
+        jeu modele         comparaison   diff    bas   haut  gain_net
+       skab    mlp       U local - RAW -0.005 -0.020  0.012     False
+       skab    mlp U local - mlp_E_fus  0.005 -0.021  0.029     False
+       skab    cnn       U local - RAW -0.046 -0.063 -0.031     False
+       skab    cnn U local - cnn_E_fus -0.037 -0.068 -0.010     False
+hydraulique    mlp       U local - RAW  0.057  0.041  0.073      True
+hydraulique    mlp U local - mlp_E_fus  0.069  0.054  0.084      True
+hydraulique    cnn       U local - RAW  0.028  0.016  0.041      True
+hydraulique    cnn U local - cnn_E_fus  0.030  0.011  0.048      True
+mlp regle remplie sur les deux jeux : False
+cnn regle remplie sur les deux jeux : False

@@ -1,0 +1,8 @@
+family,E_early,E_fus,E_loc,E_single,NLL_fus,RAW,Toujours_debit,U_branch,U_early,U_fus,U_loc,U_single
+ajout_eau,temperature,vibration,temperature,temperature,vibration,temperature,debit,temperature,temperature,debit,temperature,temperature
+balourd,temperature,vibration,vibration,vibration,vibration,vibration,debit,vibration,vibration,pression,vibration,vibration
+cavitation,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit
+eau_chaude,temperature,temperature,temperature,temperature,electrique,temperature,debit,temperature,temperature,temperature,temperature,temperature
+fuite,vibration,debit,pression,pression,debit,debit,debit,debit,debit,debit,debit,debit
+valve1,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit
+valve2,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit,debit
